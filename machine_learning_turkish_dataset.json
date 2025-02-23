@@ -1,0 +1,677 @@
+[
+    {
+      "instruction": "Doğrusal regresyonun temel prensipleri nelerdir ve hangi varsayımlara dayanır?",
+      "input": "Doğrusal regresyon modelinin geçerli olabilmesi için hangi koşulların sağlanması gerekir?",
+      "output": "Doğrusal regresyon, bağımlı ve bağımsız değişkenler arasındaki doğrusal ilişkiyi modelleyen bir algoritmadır. Varsayımları arasında doğrusallık, bağımsızlık, homoskedastisite ve normallik bulunur. Bu varsayımların ihlali, modelin doğruluğunu etkileyebilir."
+    },
+    {
+      "instruction": "Lojistik regresyonun olasılık tahmini nasıl yapılır ve hangi kayıp fonksiyonu kullanılır?",
+      "input": "Lojistik regresyon modelinde, bir örneğin belirli bir sınıfa ait olma olasılığı nasıl hesaplanır ve modelin performansı hangi metriklerle değerlendirilir?",
+      "output": "Lojistik regresyon, sigmoid fonksiyonu kullanarak olasılık tahmini yapar. Modelin eğitimi sırasında çapraz entropi kayıp fonksiyonu kullanılır. Performans değerlendirmesi için doğruluk, kesinlik, geri çağırma ve F1 skoru gibi metrikler kullanılır."
+    },
+    {
+      "instruction": "Karar ağaçlarının aşırı uyum (overfitting) sorununu önlemek için hangi yöntemler kullanılır?",
+      "input": "Karar ağacı modelinin karmaşıklığını kontrol etmek ve aşırı uyumu önlemek için hangi teknikler uygulanabilir?",
+      "output": "Karar ağaçlarında aşırı uyumu önlemek için budama (pruning) teknikleri, ağacın derinliğini sınırlama, minimum örnek sayısı belirleme ve çapraz doğrulama gibi yöntemler kullanılır."
+    },
+    {
+      "instruction": "Rastgele orman algoritmasının bagging ve özellik rastgeleleştirme (feature randomization) teknikleri nasıl çalışır?",
+      "input": "Rastgele orman modelinde, her bir karar ağacının farklı veri alt kümeleri ve özelliklerle eğitilmesi nasıl bir avantaj sağlar?",
+      "output": "Rastgele orman, bagging (bootstrap aggregating) ve özellik rastgeleleştirme tekniklerini kullanarak ağaçlar arasında çeşitlilik oluşturur. Bu çeşitlilik, modelin genelleme yeteneğini artırır ve aşırı uyumu azaltır."
+    },
+    {
+      "instruction": "Destek vektör makinelerinin çekirdek (kernel) fonksiyonları nelerdir ve hangi durumlarda kullanılırlar?",
+      "input": "Doğrusal olmayan veri kümelerini sınıflandırmak için SVM'lerde hangi çekirdek fonksiyonları kullanılabilir?",
+      "output": "SVM'lerde doğrusal, polinom, RBF (radyal tabanlı fonksiyon) ve sigmoid gibi çekirdek fonksiyonları kullanılır. Çekirdek fonksiyonları, verileri yüksek boyutlu bir uzaya eşleyerek doğrusal olmayan sınıflandırma problemlerini çözmeyi sağlar."
+    },
+    {
+      "instruction": "K-ortalama kümeleme algoritmasının optimal küme sayısını belirlemek için hangi yöntemler kullanılır?",
+      "input": "K-ortalama kümeleme modelinde, veri kümesi için en uygun küme sayısını nasıl belirleyebiliriz?",
+      "output": "K-ortalama kümeleme algoritmasında optimal küme sayısını belirlemek için dirsek (elbow) yöntemi, siluet katsayısı ve Gap istatistiği gibi yöntemler kullanılır."
+    },
+    {
+      "instruction": "Derin öğrenme modellerinde geri yayılım (backpropagation) algoritması nasıl çalışır ve hangi optimizasyon yöntemleri kullanılır?",
+      "input": "Derin öğrenme modellerinde, hata sinyallerinin katmanlar arasında geriye doğru yayılması ve ağırlıkların güncellenmesi nasıl gerçekleşir?",
+      "output": "Geri yayılım, hata sinyallerinin ağın katmanları arasında geriye doğru yayılması ve ağırlıkların gradyan inişi (gradient descent) veya Adam gibi optimizasyon yöntemleriyle güncellenmesidir."
+    },
+    {
+      "instruction": "Evrişimsel sinir ağları (CNN) görüntü tanıma problemlerinde nasıl kullanılır ve hangi katmanlardan oluşurlar?",
+      "input": "CNN mimarisi, görüntü verilerini işlemek için hangi katmanları içerir ve bu katmanların işlevleri nelerdir?",
+      "output": "CNN'ler, evrişim (convolution), havuzlama (pooling) ve tam bağlantılı (fully connected) katmanlarından oluşur. Evrişim katmanları özellikleri çıkarırken, havuzlama katmanları boyutu azaltır ve tam bağlantılı katmanlar sınıflandırma yapar."
+    },
+    {
+      "instruction": "Tekrarlayan sinir ağları (RNN) doğal dil işleme problemlerinde nasıl kullanılır ve hangi sorunları çözerler?",
+      "input": "RNN mimarisi, sıralı verileri işlemek için nasıl tasarlanmıştır ve hangi dil işleme görevlerinde kullanılır?",
+      "output": "RNN'ler, sıralı verileri işlemek için tasarlanmıştır ve hafıza mekanizması sayesinde uzun vadeli bağımlılıkları yakalayabilir. Metin sınıflandırma, makine çevirisi ve zaman serisi analizi gibi görevlerde kullanılırlar."
+    },
+    {
+      "instruction": "Pekiştirmeli öğrenme (reinforcement learning) nedir ve hangi uygulamalarda kullanılır?",
+      "input": "Pekiştirmeli öğrenme ajanları, çevreleriyle etkileşim kurarak nasıl öğrenirler ve hangi tür problemler için uygundurlar?",
+      "output": "Pekiştirmeli öğrenme, ajanların çevreleriyle etkileşim kurarak ödül sinyalleriyle öğrenmesini sağlar. Oyun oynama, robot kontrolü ve kaynak yönetimi gibi uygulamalarda kullanılır."
+    },
+    {
+      "instruction": "Model değerlendirme metriklerinden olan ROC eğrisi ve AUC nasıl yorumlanır?",
+      "input": "ROC eğrisi ve AUC değerleri, sınıflandırma modellerinin performansını nasıl değerlendirmede kullanılır?",
+      "output": "ROC eğrisi, modelin farklı eşik değerlerinde doğru pozitif ve yanlış pozitif oranlarını gösterir. AUC (eğri altında kalan alan), modelin genel performansını temsil eder ve 1'e yakın değerler iyi performansı gösterir."
+    },
+    {
+      "instruction": "Hiperparametre optimizasyonunda kullanılan grid search ve random search yöntemleri arasındaki farklar nelerdir?",
+      "input": "Grid search ve random search yöntemleri, hiperparametre uzayında nasıl arama yaparlar ve hangi durumlarda tercih edilirler?",
+      "output": "Grid search, tüm hiperparametre kombinasyonlarını denerken, random search rastgele kombinasyonlar seçer. Random search, geniş hiperparametre uzaylarında daha verimli olabilir."
+    },
+    {
+      "instruction": "Transfer öğrenimi modellerinde ince ayar (fine-tuning) nasıl yapılır ve hangi katmanlar dondurulur veya eğitilir?",
+      "input": "Transfer öğrenimi sırasında, önceden eğitilmiş bir modelin katmanlarının nasıl ayarlanması gerekir?",
+      "output": "İnce ayar sırasında, önceden eğitilmiş modelin son katmanları eğitilirken, ilk katmanlar dondurulabilir. Bu, modelin yeni veri setine uyum sağlamasını sağlar."
+    },
+    {
+      "instruction": "Doğal dil işlemede kullanılan kelime gömme (word embedding) teknikleri nelerdir ve nasıl çalışırlar?",
+      "input": "Word2Vec, GloVe ve FastText gibi kelime gömme modelleri, kelimeleri vektörlere nasıl dönüştürürler?",
+      "output": "Kelime gömme teknikleri, kelimeleri anlamlarını temsil eden vektörlere dönüştürür. Word2Vec, kelimelerin bağlamlarını kullanarak vektörler oluştururken, GloVe kelime-kelime ortak oluşum matrisini kullanır ve FastText alt kelimeleri de dikkate alır."
+    },
+    {
+      "instruction": "Zaman serisi analizinde kullanılan ARIMA ve LSTM modelleri arasındaki farklar nelerdir?",
+      "input": "ARIMA ve LSTM modelleri, zaman serisi verilerini tahmin etmek için hangi farklı yaklaşımları kullanırlar?",
+      "output": "ARIMA modelleri, doğrusal zaman serisi desenlerini yakalarken, LSTM modelleri doğrusal olmayan desenleri ve uzun vadeli bağımlılıkları yakalayabilir. LSTM, karmaşık zaman serisi verileri için daha uygundur."
+    },
+    {
+        "instruction": "Python 3'te f-string biçimlendirmesi ML projelerinde nasıl kullanılır?",
+        "input": "ML modelinin performans metriklerini ve hiperparametrelerini raporlamak için f-string'leri nasıl kullanabiliriz?",
+        "output": "Python 3'te f-string'ler, değişkenleri doğrudan dize içine yerleştirmeyi sağlar. Örneğin, `f'Model doğruluğu: {accuracy:.4f}, Hiperparametre: {learning_rate}'` şeklinde bir rapor oluşturabiliriz. Bu, ML projelerinde okunabilirliği ve kodun bakımını kolaylaştırır. Python 3.12'de f-string'ler daha da optimize edilmiştir."
+      },
+      {
+        "instruction": "Python 3'te tür ipuçları (type hints) ML kodunu nasıl iyileştirir?",
+        "input": "Büyük ML projelerinde tür ipuçları kullanarak hataları nasıl önleyebiliriz ve kodun anlaşılabilirliğini nasıl artırabiliriz?",
+        "output": "Python 3'te tür ipuçları, değişkenlerin ve fonksiyonların beklenen türlerini belirtmemizi sağlar. Örneğin, `def train_model(data: pd.DataFrame, labels: np.ndarray) -> torch.Tensor:` şeklinde bir fonksiyon tanımlayabiliriz. Bu, ML kodunda hataları erken yakalamamıza ve kodun anlaşılabilirliğini artırmamıza yardımcı olur. Python 3.12'de tür ipuçları daha da geliştirilmiştir."
+      },
+      {
+        "instruction": "Python 3'te veri sınıfları (dataclasses) ML modellerini temsil etmek için nasıl kullanılır?",
+        "input": "ML modellerinin hiperparametrelerini ve yapılandırma ayarlarını veri sınıfları kullanarak nasıl düzenleyebiliriz?",
+        "output": "Python 3'te veri sınıfları, veri saklamak için basit ve okunabilir bir yol sunar. Örneğin, `@dataclass class ModelConfig: learning_rate: float = 0.001, batch_size: int = 32` şeklinde bir veri sınıfı oluşturabiliriz. Bu, ML modellerinin yapılandırmasını kolaylaştırır. Python 3.7'den itibaren kullanılabilir."
+      },
+      {
+        "instruction": "Python 3'te eşleştirme (pattern matching) ML veri ön işlemede nasıl kullanılır?",
+        "input": "Farklı veri tiplerini ve yapılarını işlemek için eşleştirme özelliğini nasıl kullanabiliriz?",
+        "output": "Python 3.10'dan itibaren eşleştirme, veri tiplerini ve yapılarını kontrol etmemizi sağlar. Örneğin, `match data: case list(): ... case dict(): ...` şeklinde veri tiplerine göre farklı işlemler yapabiliriz. Bu, ML veri ön işlemede esneklik sağlar."
+      },
+      {
+        "instruction": "Python 3'te sanal ortamlar (virtual environments) ML projeleri için neden önemlidir?",
+        "input": "Farklı ML projelerinin bağımlılıklarını izole etmek ve çakışmaları önlemek için sanal ortamları nasıl kullanabiliriz?",
+        "output": "Python 3'te `venv` modülü ile sanal ortamlar oluşturabiliriz. Her proje için ayrı bir ortam oluşturarak bağımlılıkları izole edebiliriz. Bu, ML projelerinin tekrarlanabilirliğini ve taşınabilirliğini artırır."
+      },
+      {
+        "instruction": "Python 3'te hata ayıklama (debugging) araçları ML kodunu nasıl iyileştirir?",
+        "input": "ML kodundaki hataları bulmak ve düzeltmek için hangi hata ayıklama araçları ve teknikleri kullanılır?",
+        "output": "Python 3'te `pdb` modülü, `breakpoint()` fonksiyonu ve IDE'lerin hata ayıklama özellikleri kullanılabilir. Bu araçlar, ML kodundaki hataları adım adım izlememizi ve düzeltmemizi sağlar."
+      },
+      {
+        "instruction": "Python 3'te paralel işleme (parallel processing) ML model eğitimini nasıl hızlandırır?",
+        "input": "Büyük veri kümeleri ve karmaşık modelleri eğitmek için `multiprocessing` veya `concurrent.futures` modüllerini nasıl kullanabiliriz?",
+        "output": "Python 3'te `multiprocessing` veya `concurrent.futures` modülleri ile paralel işleme yapabiliriz. Bu, ML model eğitimini hızlandırır ve kaynak kullanımını optimize eder. Özellikle büyük veri kümeleri ve karmaşık modeller için faydalıdır."
+      },
+      {
+        "instruction": "Python 3'te bellek yönetimi (memory management) ML projeleri için neden önemlidir?",
+        "input": "Büyük veri kümeleri ve modellerle çalışırken bellek kullanımını nasıl optimize edebiliriz ve bellek sızıntılarını nasıl önleyebiliriz?",
+        "output": "Python 3'te bellek yönetimi, ML projeleri için kritik öneme sahiptir. Büyük veri kümeleri ve modeller bellek sızıntılarına neden olabilir. `del` operatörü, `gc` modülü ve veri tiplerinin bellek verimliliği göz önünde bulundurulmalıdır."
+      },
+      {
+        "instruction": "Python 3'te kod profilleme (profiling) ML model performansını nasıl iyileştirir?",
+        "input": "ML kodunun performans darboğazlarını belirlemek ve optimize etmek için hangi profilleme araçları kullanılır?",
+        "output": "Python 3'te `cProfile` modülü ve `line_profiler` kütüphanesi ile kod profilleme yapılabilir. Bu araçlar, ML kodunun hangi bölümlerinin daha fazla zaman aldığını gösterir ve optimizasyon fırsatlarını belirlememize yardımcı olur."
+      },
+      {
+        "instruction": "Python 3'te ML projeleri için test yazma (unit testing) neden önemlidir?",
+        "input": "ML kodunun doğruluğunu ve güvenilirliğini sağlamak için `unittest` veya `pytest` gibi test çerçevelerini nasıl kullanabiliriz?",
+        "output": "Python 3'te `unittest` veya `pytest` gibi test çerçeveleri ile ML kodunun doğruluğunu ve güvenilirliğini sağlayabiliriz. Testler, kodun beklenen davranışını doğrular ve hataları erken yakalamamıza yardımcı olur."
+      },
+        {
+        "instruction": "Python 3'te ML projeleri için dokümantasyon (documentation) nasıl oluşturulur?",
+        "input": "ML kodunun anlaşılabilirliğini ve kullanılabilirliğini artırmak için `Sphinx` veya `pydoc` gibi araçları nasıl kullanabiliriz?",
+        "output": "Python 3'te `Sphinx` veya `pydoc` gibi araçlar ile ML kodunun dokümantasyonu oluşturulabilir. İyi bir dokümantasyon, kodun anlaşılabilirliğini ve kullanılabilirliğini artırır ve işbirliğini kolaylaştırır."
+      },
+        {
+        "instruction": "Python 3'te ML projeleri için sürüm kontrolü (version control) nasıl kullanılır?",
+        "input": "ML kodunun ve veri setlerinin sürümlerini yönetmek için `Git` gibi sürüm kontrolü araçlarını nasıl kullanabiliriz?",
+        "output": "Python 3'te `Git` gibi sürüm kontrolü araçları ile ML kodunun ve veri setlerinin sürümleri yönetilebilir. Sürüm kontrolü, değişiklikleri takip etmemizi, geri almamızı ve işbirliği yapmamızı sağlar."
+      },
+      {
+        "instruction": "NumPy'de çok boyutlu diziler nasıl oluşturulur?",
+        "input": "Farklı şekil ve boyutlarda NumPy dizileri oluşturmak için hangi fonksiyonlar kullanılır?",
+        "output": "NumPy'de `np.array()`, `np.zeros()`, `np.ones()`, `np.arange()`, `np.linspace()`, `np.random.rand()` gibi fonksiyonlar kullanılarak diziler oluşturulabilir. `np.array()` ile Python listelerinden veya tuple'lardan diziler oluşturulabilir."
+      },
+      {
+        "instruction": "NumPy'de dizi dilimleme (slicing) ve indeksleme (indexing) nasıl yapılır?",
+        "input": "NumPy dizilerinden belirli elemanlara veya alt dizilere erişmek için hangi yöntemler kullanılır?",
+        "output": "NumPy dizilerinde dilimleme ve indeksleme, Python listelerine benzer şekilde yapılır. `dizi[başlangıç:bitiş:adım]` şeklinde dilimleme yapılabilir. `dizi[satır_indeksi, sütun_indeksi]` şeklinde elemanlara erişilebilir. Boolean indeksleme ile belirli koşulları sağlayan elemanlara erişilebilir."
+      },
+      {
+        "instruction": "NumPy'de dizi şeklini değiştirme (reshaping) ve transpoz alma (transposing) nasıl yapılır?",
+        "input": "NumPy dizilerinin şeklini değiştirmek veya satır ve sütunlarını yer değiştirmek için hangi fonksiyonlar kullanılır?",
+        "output": "NumPy'de `reshape()` fonksiyonu ile dizilerin şekli değiştirilebilir. `transpose()` veya `.T` özelliği ile dizilerin transpozu alınabilir. `flatten()` veya `ravel()` fonksiyonları ile çok boyutlu diziler tek boyuta indirgenebilir."
+      },
+      {
+        "instruction": "NumPy'de matematiksel işlemler nasıl yapılır?",
+        "input": "NumPy dizileri üzerinde toplama, çıkarma, çarpma, bölme, üs alma, karekök alma gibi matematiksel işlemleri nasıl yapabiliriz?",
+        "output": "NumPy'de diziler üzerinde eleman bazında (element-wise) matematiksel işlemler yapılabilir. `np.add()`, `np.subtract()`, `np.multiply()`, `np.divide()`, `np.exp()`, `np.sqrt()` gibi fonksiyonlar kullanılabilir. Ayrıca, `+`, `-`, `*`, `/`, `**` gibi operatörler de kullanılabilir."
+      },
+      {
+        "instruction": "NumPy'de lineer cebir işlemleri nasıl yapılır?",
+        "input": "NumPy dizileri üzerinde matris çarpımı, ters alma, özdeğer ve özvektör hesaplama gibi lineer cebir işlemlerini nasıl yapabiliriz?",
+        "output": "NumPy'de `np.dot()` fonksiyonu ile matris çarpımı, `np.linalg.inv()` ile matris tersi, `np.linalg.eig()` ile özdeğer ve özvektör hesaplamaları yapılabilir. `np.linalg.solve()` ile lineer denklem sistemleri çözülebilir."
+      },
+      {
+        "instruction": "NumPy'de istatistiksel işlemler nasıl yapılır?",
+        "input": "NumPy dizileri üzerinde ortalama, medyan, standart sapma, varyans gibi istatistiksel işlemleri nasıl yapabiliriz?",
+        "output": "NumPy'de `np.mean()`, `np.median()`, `np.std()`, `np.var()` gibi fonksiyonlar ile istatistiksel işlemler yapılabilir. `np.percentile()` ile belirli yüzdelik değerler hesaplanabilir. `np.histogram()` ile histogramlar oluşturulabilir."
+      },
+      {
+        "instruction": "NumPy'de eksik veriler (missing data) nasıl işlenir?",
+        "input": "NumPy dizilerinde bulunan `NaN` (Not a Number) değerlerini nasıl tespit edebilir ve işleyebiliriz?",
+        "output": "NumPy'de `np.isnan()` fonksiyonu ile `NaN` değerleri tespit edilebilir. `np.nanmean()`, `np.nanmedian()` gibi `NaN` güvenli fonksiyonlar ile istatistiksel işlemler yapılabilir. `np.nan_to_num()` ile `NaN` değerleri belirli bir değer ile değiştirilebilir."
+      },
+      {
+        "instruction": "NumPy'de dosya okuma ve yazma işlemleri nasıl yapılır?",
+        "input": "NumPy dizilerini diskten okumak ve diske yazmak için hangi fonksiyonlar kullanılır?",
+        "output": "NumPy'de `np.loadtxt()` ve `np.savetxt()` fonksiyonları ile metin dosyalarından veri okunabilir ve yazılabilir. `np.load()` ve `np.save()` fonksiyonları ile NumPy'ye özgü `.npy` dosyalarından veri okunabilir ve yazılabilir."
+      },
+      {
+        "instruction": "NumPy'de broadcasting (yayın) özelliği nedir ve nasıl kullanılır?",
+        "input": "Farklı şekil ve boyutlardaki NumPy dizileri üzerinde eleman bazında işlemler yaparken broadcasting özelliğini nasıl kullanabiliriz?",
+        "output": "NumPy'de broadcasting, farklı şekil ve boyutlardaki diziler üzerinde eleman bazında işlemler yapmayı sağlar. Küçük boyutlu diziler, büyük boyutlu dizilere otomatik olarak genişletilir. Bu, kodun daha kısa ve okunabilir olmasını sağlar."
+      },
+      {
+        "instruction": "NumPy'de performans optimizasyonu nasıl yapılır?",
+        "input": "Büyük NumPy dizileri üzerinde işlem yaparken performansı artırmak için hangi teknikler kullanılır?",
+        "output": "NumPy'de vektörize işlemler (vectorized operations) kullanarak döngülerden kaçınmak, bellek verimliliği için doğru veri tiplerini kullanmak ve `np.einsum()` gibi optimize edilmiş fonksiyonları kullanmak performans optimizasyonu sağlar."
+      },
+        {
+        "instruction": "NumPy'de rastgele sayılar nasıl oluşturulur?",
+        "input": "Farklı dağılımlardan rastgele sayılar oluşturmak için hangi NumPy fonksiyonları kullanılır?",
+        "output": "NumPy'de `np.random.rand()`, `np.random.randn()`, `np.random.randint()`, `np.random.normal()`, `np.random.uniform()` gibi fonksiyonlar ile farklı dağılımlardan rastgele sayılar oluşturulabilir. `np.random.seed()` ile rastgele sayı üretimi tekrarlanabilir hale getirilebilir."
+      },
+        {
+        "instruction": "NumPy'de evrensel fonksiyonlar (ufuncs) nedir ve nasıl kullanılır?",
+        "input": "NumPy'de eleman bazında hızlı matematiksel işlemler yapmak için evrensel fonksiyonları nasıl kullanabiliriz?",
+        "output": "NumPy'de evrensel fonksiyonlar (ufuncs), diziler üzerinde eleman bazında hızlı matematiksel işlemler yapmayı sağlar. `np.sin()`, `np.cos()`, `np.exp()`, `np.log()` gibi fonksiyonlar evrensel fonksiyonlara örnektir."
+      },
+      {
+        "instruction": "Pandas'ta DataFrame ve Series nasıl oluşturulur?",
+        "input": "Farklı veri kaynaklarından (CSV, Excel, SQL) Pandas DataFrame ve Series oluşturmak için hangi fonksiyonlar kullanılır?",
+        "output": "Pandas'ta DataFrame'ler, `pd.DataFrame()` fonksiyonu ile Python sözlüklerinden veya listelerinden oluşturulabilir. Series'ler, `pd.Series()` fonksiyonu ile Python listelerinden veya NumPy dizilerinden oluşturulabilir. `pd.read_csv()`, `pd.read_excel()`, `pd.read_sql()` gibi fonksiyonlar ile farklı veri kaynaklarından veri okunabilir."
+      },
+      {
+        "instruction": "Pandas'ta veri seçme ve filtreleme nasıl yapılır?",
+        "input": "Pandas DataFrame'lerinden belirli satırları, sütunları veya koşulları sağlayan verileri seçmek için hangi yöntemler kullanılır?",
+        "output": "Pandas'ta `loc[]`, `iloc[]`, `at[]`, `iat[]` gibi indeksleme yöntemleri ile veri seçilebilir. Boolean indeksleme ile belirli koşulları sağlayan satırlar veya sütunlar filtrelenebilir. `isin()`, `query()` gibi fonksiyonlar ile daha karmaşık filtreleme işlemleri yapılabilir."
+      },
+      {
+        "instruction": "Pandas'ta veri temizleme ve dönüştürme nasıl yapılır?",
+        "input": "Pandas DataFrame'lerinde eksik verileri (missing data), tekrar eden satırları veya tutarsız verileri nasıl işleyebiliriz?",
+        "output": "Pandas'ta `fillna()`, `dropna()`, `drop_duplicates()`, `replace()`, `apply()` gibi fonksiyonlar ile veri temizleme ve dönüştürme işlemleri yapılabilir. `astype()` ile veri tipleri dönüştürülebilir. `str.lower()`, `str.upper()`, `str.replace()` gibi string fonksiyonları ile metin verileri işlenebilir."
+      },
+      {
+        "instruction": "Pandas'ta veri gruplama ve özetleme nasıl yapılır?",
+        "input": "Pandas DataFrame'lerini belirli sütunlara göre gruplamak ve özet istatistikler (ortalama, medyan, standart sapma) hesaplamak için hangi fonksiyonlar kullanılır?",
+        "output": "Pandas'ta `groupby()` fonksiyonu ile DataFrame'ler gruplanabilir. `agg()`, `mean()`, `median()`, `std()`, `count()` gibi fonksiyonlar ile özet istatistikler hesaplanabilir. `pivot_table()` ve `crosstab()` fonksiyonları ile çapraz tablolar oluşturulabilir."
+      },
+      {
+        "instruction": "Pandas'ta veri birleştirme (merging) ve birleştirme (concatenation) nasıl yapılır?",
+        "input": "Farklı Pandas DataFrame'lerini birleştirmek veya yan yana eklemek için hangi fonksiyonlar kullanılır?",
+        "output": "Pandas'ta `merge()` fonksiyonu ile iki veya daha fazla DataFrame belirli sütunlara göre birleştirilebilir. `concat()` fonksiyonu ile DataFrame'ler satır veya sütun bazında birleştirilebilir. `join()` fonksiyonu ile indekslere göre birleştirme yapılabilir."
+      },
+      {
+        "instruction": "Pandas'ta zaman serisi verileri nasıl işlenir?",
+        "input": "Pandas DataFrame'lerinde zaman serisi verilerini indekslemek, yeniden örneklemek (resampling) ve kayan ortalamalar (rolling averages) hesaplamak için hangi fonksiyonlar kullanılır?",
+        "output": "Pandas'ta `DatetimeIndex` kullanılarak zaman serisi verileri indekslenebilir. `resample()` fonksiyonu ile zaman serisi verileri yeniden örneklenebilir. `rolling()` fonksiyonu ile kayan ortalamalar hesaplanabilir. `shift()` ve `diff()` fonksiyonları ile zaman serisi verilerinde kaydırma ve fark işlemleri yapılabilir."
+      },
+      {
+        "instruction": "Pandas'ta eksik veriler (missing data) nasıl işlenir?",
+        "input": "Pandas DataFrame'lerinde bulunan `NaN` (Not a Number) değerlerini nasıl tespit edebilir ve işleyebiliriz?",
+        "output": "Pandas'ta `isna()` ve `notna()` fonksiyonları ile `NaN` değerleri tespit edilebilir. `fillna()` fonksiyonu ile `NaN` değerleri belirli bir değer veya yöntemle doldurulabilir. `dropna()` fonksiyonu ile `NaN` değerleri içeren satırlar veya sütunlar silinebilir."
+      },
+      {
+        "instruction": "Pandas'ta dosya okuma ve yazma işlemleri nasıl yapılır?",
+        "input": "Pandas DataFrame'lerini farklı dosya formatlarında (CSV, Excel, JSON, SQL) okumak ve yazmak için hangi fonksiyonlar kullanılır?",
+        "output": "Pandas'ta `pd.read_csv()`, `pd.read_excel()`, `pd.read_json()`, `pd.read_sql()` gibi fonksiyonlar ile farklı dosya formatlarından veri okunabilir. `to_csv()`, `to_excel()`, `to_json()`, `to_sql()` gibi fonksiyonlar ile DataFrame'ler farklı dosya formatlarında yazılabilir."
+      },
+      {
+        "instruction": "Pandas'ta performans optimizasyonu nasıl yapılır?",
+        "input": "Büyük Pandas DataFrame'leri üzerinde işlem yaparken performansı artırmak için hangi teknikler kullanılır?",
+        "output": "Pandas'ta vektörize işlemler (vectorized operations) kullanarak döngülerden kaçınmak, doğru veri tiplerini kullanmak ve `apply()` fonksiyonu yerine `map()` veya `applymap()` gibi fonksiyonları kullanmak performans optimizasyonu sağlar."
+      },
+      {
+        "instruction": "Pandas'ta kategori verileri (categorical data) nasıl işlenir?",
+        "input": "Pandas DataFrame'lerinde bulunan kategori verilerini nasıl dönüştürebilir ve analiz edebiliriz?",
+        "output": "Pandas'ta `astype('category')` ile sütunlar kategori veri tipine dönüştürülebilir. `cat.codes`, `cat.categories`, `cat.ordered` gibi özellikler ile kategori verileri analiz edilebilir. `pd.get_dummies()` ile kategori verileri one-hot encoding ile sayısal verilere dönüştürülebilir."
+      },
+        {
+        "instruction": "Pandas'ta çoklu indeksleme (multi-indexing) nasıl kullanılır?",
+        "input": "Pandas DataFrame'lerinde birden fazla indeks seviyesi kullanarak verileri nasıl organize edebilir ve erişebiliriz?",
+        "output": "Pandas'ta `MultiIndex` kullanarak DataFrame'lerde birden fazla indeks seviyesi oluşturulabilir. `stack()`, `unstack()`, `swaplevel()`, `sort_index()` gibi fonksiyonlar ile çoklu indeksli DataFrame'ler manipüle edilebilir."
+      },
+        {
+        "instruction": "Pandas'ta veri görselleştirme nasıl yapılır?",
+        "input": "Pandas DataFrame'lerinden çizgi grafikleri, sütun grafikleri, histogramlar ve kutu grafikleri gibi görselleştirmeler nasıl oluşturulur?",
+        "output": "Pandas'ta `plot()` fonksiyonu ile DataFrame'lerden çizgi grafikleri, sütun grafikleri, histogramlar ve kutu grafikleri gibi görselleştirmeler oluşturulabilir. `matplotlib` veya `seaborn` gibi kütüphaneler ile daha gelişmiş görselleştirmeler yapılabilir."
+      },
+      {
+        "instruction": "PyTorch'ta tensörler nasıl oluşturulur?",
+        "input": "Farklı veri tiplerinde ve boyutlarda PyTorch tensörleri oluşturmak için hangi fonksiyonlar kullanılır?",
+        "output": "PyTorch'ta `torch.Tensor()`, `torch.zeros()`, `torch.ones()`, `torch.randn()`, `torch.arange()` gibi fonksiyonlar kullanılarak tensörler oluşturulabilir. `torch.from_numpy()` ile NumPy dizilerinden tensörler oluşturulabilir. `.to('cuda')` ile tensörler GPU'ya taşınabilir."
+      },
+      {
+        "instruction": "PyTorch'ta otomatik türev (autograd) nasıl kullanılır?",
+        "input": "PyTorch'ta gradyanları hesaplamak ve otomatik türev almak için hangi yöntemler kullanılır?",
+        "output": "PyTorch'ta `.requires_grad_(True)` ile tensörlerin gradyan takibi etkinleştirilebilir. `.backward()` fonksiyonu ile gradyanlar hesaplanabilir. `.grad` özelliği ile gradyan değerlerine erişilebilir. `torch.no_grad()` veya `.detach()` ile gradyan takibi devre dışı bırakılabilir."
+      },
+      {
+        "instruction": "PyTorch'ta özel sinir ağı katmanları ve modelleri nasıl oluşturulur?",
+        "input": "PyTorch'ta farklı katmanları birleştirerek özel sinir ağı mimarileri oluşturmak ve `nn.Module` sınıfını kullanarak modelleri tanımlamak için hangi yöntemler kullanılır?",
+        "output": "PyTorch'ta `nn.Linear()`, `nn.Conv2d()`, `nn.LSTM()`, `nn.ReLU()`, `nn.Sigmoid()` gibi katmanlar kullanılarak modeller oluşturulabilir. `nn.Module` sınıfı, özel katmanlar ve modeller tanımlamak için kullanılır. `forward()` metodu, modelin ileri yayılımını tanımlar."
+      },
+      {
+        "instruction": "PyTorch'ta veri yükleyicileri (DataLoader) ve veri kümeleri (Dataset) nasıl kullanılır?",
+        "input": "PyTorch'ta büyük veri kümelerini verimli bir şekilde yüklemek, karıştırmak ve gruplamak için hangi araçlar kullanılır?",
+        "output": "PyTorch'ta `torch.utils.data.Dataset` sınıfı ile özel veri kümeleri oluşturulabilir. `torch.utils.data.DataLoader` ile veri yükleyicileri oluşturulabilir. `shuffle=True` ve `batch_size` parametreleri ile veri karıştırma ve gruplama işlemleri yapılabilir. `torchvision.datasets` ve `torchtext.datasets` gibi hazır veri kümeleri kullanılabilir."
+      },
+      {
+        "instruction": "PyTorch'ta optimizasyon algoritmaları nasıl kullanılır?",
+        "input": "PyTorch'ta model parametrelerini optimize etmek için hangi optimizasyon algoritmaları ve araçları kullanılır?",
+        "output": "PyTorch'ta `torch.optim.SGD()`, `torch.optim.Adam()`, `torch.optim.RMSprop()` gibi optimizasyon algoritmaları kullanılabilir. `optimizer.zero_grad()` ile gradyanlar sıfırlanabilir. `optimizer.step()` ile model parametreleri güncellenebilir. `torch.optim.lr_scheduler` ile öğrenme oranı ayarlanabilir."
+      },
+      {
+        "instruction": "PyTorch'ta kayıp fonksiyonları (loss functions) nasıl kullanılır?",
+        "input": "PyTorch'ta farklı görevler için (sınıflandırma, regresyon, segmentasyon) hangi kayıp fonksiyonları kullanılır?",
+        "output": "PyTorch'ta `nn.CrossEntropyLoss()`, `nn.MSELoss()`, `nn.BCELoss()`, `nn.CTCLoss()` gibi kayıp fonksiyonları kullanılabilir. Kayıp fonksiyonları, modelin tahminleri ile gerçek değerler arasındaki farkı ölçer."
+      },
+      {
+        "instruction": "PyTorch'ta model kaydetme ve yükleme nasıl yapılır?",
+        "input": "PyTorch'ta eğitilmiş modelleri diske kaydetmek ve tekrar yüklemek için hangi yöntemler kullanılır?",
+        "output": "PyTorch'ta `torch.save()` fonksiyonu ile model parametreleri veya modelin tamamı diske kaydedilebilir. `torch.load()` fonksiyonu ile kaydedilmiş modeller yüklenebilir. `state_dict()` ile modelin parametreleri sözlük olarak kaydedilebilir ve yüklenebilir."
+      },
+      {
+        "instruction": "PyTorch'ta GPU kullanımı nasıl optimize edilir?",
+        "input": "PyTorch'ta GPU'ları verimli bir şekilde kullanmak ve model eğitimini hızlandırmak için hangi teknikler kullanılır?",
+        "output": "PyTorch'ta `.to('cuda')` ile tensörler ve modeller GPU'ya taşınabilir. `torch.cuda.is_available()` ile GPU varlığı kontrol edilebilir. `torch.cuda.empty_cache()` ile GPU belleği temizlenebilir. `torch.backends.cudnn.benchmark = True` ile CuDNN optimizasyonları etkinleştirilebilir."
+      },
+      {
+        "instruction": "PyTorch'ta dağıtık eğitim (distributed training) nasıl yapılır?",
+        "input": "Büyük modelleri ve veri kümelerini birden fazla GPU veya makinede eğitmek için hangi teknikler ve araçlar kullanılır?",
+        "output": "PyTorch'ta `torch.nn.DataParallel` veya `torch.nn.parallel.DistributedDataParallel` ile dağıtık eğitim yapılabilir. `torch.distributed` modülü ile daha gelişmiş dağıtık eğitim senaryoları uygulanabilir. `torch.multiprocessing` ile çoklu işlem kullanımı sağlanabilir."
+      },
+      {
+        "instruction": "PyTorch'ta model çıkarımı (inference) nasıl optimize edilir?",
+        "input": "Eğitilmiş modelleri gerçek zamanlı uygulamalarda veya büyük ölçekli sistemlerde hızlı ve verimli bir şekilde çalıştırmak için hangi optimizasyon teknikleri kullanılır?",
+        "output": "Model çıkarımı için `torch.jit.script()` ile model scriptleştirilebilir. `torch.onnx.export()` ile model ONNX formatına dönüştürülebilir. `torch.quantization` ile model nicelleştirilebilir. `torch.no_grad()` ile gradyan hesaplamaları devre dışı bırakılabilir. `torch.inference_mode()` ile çıkarım modu etkinleştirilebilir."
+      },
+        {
+        "instruction": "PyTorch'ta özel veri dönüşümleri (transforms) nasıl oluşturulur?",
+        "input": "PyTorch'ta görüntü veya metin verilerini ön işlemek için özel veri dönüşümleri oluşturmak için hangi yöntemler kullanılır?",
+        "output": "PyTorch'ta `torchvision.transforms` veya `torchtext.transforms` modülleri ile veri dönüşümleri oluşturulabilir. `torchvision.transforms.Lambda()` veya `torchtext.transforms.functional` ile özel fonksiyonlar veri dönüşümlerine eklenebilir. `torch.utils.data.Dataset` sınıfı ile veri dönüşümleri veri yükleme sırasında uygulanabilir."
+      },
+        {
+        "instruction": "PyTorch'ta tensör tahtası (TensorBoard) ile model eğitimi nasıl izlenir?",
+        "input": "PyTorch'ta model eğitimini gerçek zamanlı olarak görselleştirmek ve izlemek için TensorBoard'u nasıl kullanabiliriz?",
+        "output": "PyTorch'ta `torch.utils.tensorboard.SummaryWriter` ile TensorBoard logları oluşturulabilir. `writer.add_scalar()`, `writer.add_image()`, `writer.add_graph()` gibi fonksiyonlar ile eğitim metrikleri, görüntüler ve model grafiği TensorBoard'a kaydedilebilir. `tensorboard --logdir=logs` komutu ile TensorBoard başlatılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde önceden eğitilmiş modeller nasıl yüklenir?",
+        "input": "BERT, GPT veya T5 gibi önceden eğitilmiş modelleri Transformers kütüphanesi ile nasıl yükleyebiliriz?",
+        "output": "Transformers kütüphanesinde `AutoModel`, `AutoTokenizer`, `AutoModelForSequenceClassification` gibi sınıflar kullanılarak önceden eğitilmiş modeller yüklenebilir. Örneğin, `model = AutoModel.from_pretrained('bert-base-uncased')` ve `tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')` ile BERT modeli ve tokenlaştırıcı yüklenebilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde tokenlaştırma (tokenization) nasıl yapılır?",
+        "input": "Metin verilerini modelin anlayabileceği tokenlere dönüştürmek için hangi yöntemler kullanılır?",
+        "output": "Transformers kütüphanesinde `AutoTokenizer` ile tokenlaştırma yapılabilir. Tokenlaştırıcılar, kelime tabanlı, alt kelime tabanlı veya karakter tabanlı tokenlaştırma yapabilir. `tokenizer.encode()`, `tokenizer.decode()`, `tokenizer.tokenize()`, `tokenizer.convert_tokens_to_ids()` gibi fonksiyonlar ile tokenlaştırma işlemleri yapılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde metin sınıflandırma nasıl yapılır?",
+        "input": "Önceden eğitilmiş bir modeli kullanarak metinleri pozitif, negatif veya nötr gibi sınıflara ayırmak için hangi adımlar izlenmelidir?",
+        "output": "Transformers kütüphanesinde `AutoModelForSequenceClassification` ile metin sınıflandırma modelleri yüklenebilir. Tokenleştirilmiş metinler modele girdi olarak verilir ve model sınıf olasılıklarını döndürür. `Trainer` sınıfı ile model ince ayarı yapılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde soru cevaplama (question answering) nasıl yapılır?",
+        "input": "Bir metin parçası (context) ve bir soru verildiğinde, metin içindeki cevabı bulmak için hangi yöntemler kullanılır?",
+        "output": "Transformers kütüphanesinde `AutoModelForQuestionAnswering` ile soru cevaplama modelleri yüklenebilir. Tokenleştirilmiş metin ve soru modele girdi olarak verilir ve model cevap aralığını döndürür."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde metin özetleme (summarization) nasıl yapılır?",
+        "input": "Uzun bir metni kısa ve öz bir şekilde özetlemek için hangi modeller ve teknikler kullanılır?",
+        "output": "Transformers kütüphanesinde T5 veya BART gibi modeller metin özetleme için kullanılabilir. `pipeline('summarization')` ile kolay özetleme yapılabilir. `model.generate()` ile daha detaylı kontrol sağlanabilir. Beam search veya top-k sampling gibi decoding stratejileri kullanılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde metin oluşturma (text generation) nasıl yapılır?",
+        "input": "Bir başlangıç metni verildiğinde, modelin tutarlı ve anlamlı bir metin oluşturması için hangi yöntemler kullanılır?",
+        "output": "Transformers kütüphanesinde GPT veya GPT-2 gibi modeller metin oluşturma için kullanılabilir. `model.generate()` ile metin oluşturulabilir. `temperature`, `top_k`, `top_p` gibi parametreler ile metin oluşturma kontrol edilebilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde model ince ayarı (fine-tuning) nasıl yapılır?",
+        "input": "Önceden eğitilmiş bir modeli kendi veri kümemizde belirli bir görev için nasıl ince ayar yapabiliriz?",
+        "output": "Transformers kütüphanesinde `Trainer` sınıfı ile model ince ayarı yapılabilir. `TrainingArguments` ile eğitim parametreleri ayarlanabilir. `Dataset` sınıfı ile özel veri kümeleri oluşturulabilir. `DataCollatorWithPadding` ile veri kümeleri batch'lere dönüştürülürken padding işlemi yapılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde dağıtık eğitim (distributed training) nasıl yapılır?",
+        "input": "Büyük modelleri ve veri kümelerini birden fazla GPU veya makinede eğitmek için hangi teknikler ve araçlar kullanılır?",
+        "output": "Transformers kütüphanesinde `Trainer` ile `deepspeed` veya `accelerate` kullanılarak dağıtık eğitim yapılabilir. `torch.nn.DataParallel` veya `torch.nn.parallel.DistributedDataParallel` ile PyTorch'un dağıtık eğitim özellikleri kullanılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde model çıkarımı (inference) nasıl optimize edilir?",
+        "input": "Eğitilmiş modelleri gerçek zamanlı uygulamalarda veya büyük ölçekli sistemlerde hızlı ve verimli bir şekilde çalıştırmak için hangi optimizasyon teknikleri kullanılır?",
+        "output": "Model çıkarımı için `torch.jit.script()` ile model scriptleştirilebilir. `torch.onnx.export()` ile model ONNX formatına dönüştürülebilir. `torch.quantization` ile model nicelleştirilebilir. `pipeline()` ile kolay çıkarım yapılabilir. `transformers.pipeline()` ile kolay çıkarım yapılabilir."
+      },
+      {
+        "instruction": "Transformers kütüphanesinde özel modeller nasıl eğitilir ve dağıtılır?",
+        "input": "Transformers kütüphanesi ile kendi veri kümelerim üzerinde yeni modeller eğitmek ve Hugging Face Model Hub'a yüklemek için hangi adımlar izlenmelidir?",
+        "output": "Transformers kütüphanesinde `Trainer` sınıfı kullanılarak modeller eğitilebilir. `PushToHubCallback` ile modeller Model Hub'a yüklenebilir. `model.push_to_hub()` ve `tokenizer.push_to_hub()` ile model ve tokenlaştırıcı ayrı ayrı yüklenebilir. Model Hub'da modellerin versiyonları ve dokümantasyonları yönetilebilir."
+      },
+        {
+        "instruction": "Transformers kütüphanesinde tokenlaştırıcılar (tokenizers) nasıl özelleştirilir?",
+        "input": "Özel bir veri kümesi için veya belirli bir dil için tokenlaştırıcıyı nasıl özelleştirebiliriz?",
+        "output": "Transformers kütüphanesinde `Trainer` veya `TokenizerTrainer` kullanılarak tokenlaştırıcılar eğitilebilir. `ByteLevelBPETokenizer`, `WordPieceTokenizer`, `SentencePieceBPETokenizer` gibi farklı tokenlaştırıcı türleri kullanılabilir. `add_special_tokens()` ile özel tokenler eklenebilir. `save_pretrained()` ile tokenlaştırıcı kaydedilebilir."
+      },
+        {
+        "instruction": "Transformers kütüphanesinde model değerlendirme metrikleri nasıl kullanılır?",
+        "input": "Model performansını ölçmek için BLEU, ROUGE veya METEOR gibi metrikleri nasıl kullanabiliriz?",
+        "output": "Transformers kütüphanesinde `evaluate` kütüphanesi ile model değerlendirme metrikleri kullanılabilir. `load_metric()` ile metrikler yüklenebilir. `metric.compute()` ile metrikler hesaplanabilir. `Seq2SeqTrainer` ile eğitim sırasında metrikler otomatik olarak hesaplanabilir."
+      },
+      {
+        "instruction": "ML modellerinde adalet ve önyargı nasıl ölçülür?",
+        "input": "ML modellerinin farklı demografik gruplar için adil olup olmadığını belirlemek için hangi metrikler ve yöntemler kullanılır?",
+        "output": "ML modellerinde adalet ve önyargıyı ölçmek için demografik parite, eşit fırsat, eşit sonuç ve karşı olgusal adalet gibi metrikler kullanılır. Bu metrikler, modelin farklı gruplar için benzer performans gösterip göstermediğini ve adil kararlar alıp almadığını değerlendirir."
+      },
+      {
+        "instruction": "Hassas verilerle çalışırken gizliliği korumak için hangi teknikler kullanılır?",
+        "input": "Kişisel verilerin gizliliğini sağlamak ve ML modellerinin hassas bilgileri ifşa etmesini önlemek için hangi yöntemler uygulanabilir?",
+        "output": "Hassas verilerle çalışırken gizliliği korumak için diferansiyel gizlilik, federatif öğrenme, homomorfik şifreleme ve sentetik veri üretimi gibi teknikler kullanılır. Bu teknikler, verilerin anonimleştirilmesini ve modelin hassas bilgileri öğrenmesini engeller."
+      },
+      {
+        "instruction": "ML modellerinin şeffaflığı ve açıklanabilirliği neden önemlidir?",
+        "input": "ML modellerinin kararlarını nasıl verdiğini anlamak ve hesap verebilirliği sağlamak için neden şeffaflık ve açıklanabilirlik gereklidir?",
+        "output": "ML modellerinin şeffaflığı ve açıklanabilirliği, modelin kararlarını nasıl verdiğini anlamamızı ve modelin güvenilirliğini değerlendirmemizi sağlar. Bu, modelin önyargılarını tespit etmemize, hataları düzeltmemize ve modelin etik kullanımını sağlamamıza yardımcı olur."
+      },
+      {
+        "instruction": "ML modellerinde önyargı kaynakları nelerdir?",
+        "input": "ML modellerinin önyargılı sonuçlar üretmesine neden olan faktörler nelerdir?",
+        "output": "ML modellerinde önyargı kaynakları arasında eğitim verilerindeki önyargılar, algoritma tasarımındaki önyargılar, veri toplama ve etiketleme süreçlerindeki önyargılar ve sosyal önyargılar bulunur. Bu önyargılar, modelin farklı gruplar için adaletsiz kararlar almasına yol açabilir."
+      },
+      {
+        "instruction": "ML modellerinde önyargıyı azaltmak için hangi teknikler kullanılır?",
+        "input": "ML modellerinin önyargılı sonuçlar üretmesini önlemek veya azaltmak için hangi yöntemler uygulanabilir?",
+        "output": "ML modellerinde önyargıyı azaltmak için veri ön işleme teknikleri (örneğin, yeniden örnekleme, yeniden ağırlıklandırma), algoritma içi teknikler (örneğin, kısıtlanmış optimizasyon, adversarial eğitim) ve model sonrası teknikler (örneğin, eşik ayarlama, çıktı kalibrasyonu) kullanılır."
+      },
+      {
+        "instruction": "ML modellerinde hesap verebilirlik nasıl sağlanır?",
+        "input": "ML modellerinin kararlarından kimin sorumlu olduğunu belirlemek ve hesap verebilirliği sağlamak için hangi mekanizmalar oluşturulabilir?",
+        "output": "ML modellerinde hesap verebilirliği sağlamak için model dokümantasyonu, denetim izleri, etki değerlendirmeleri ve etik yönergeler oluşturulabilir. Bu mekanizmalar, modelin kararlarının izlenmesini, değerlendirilmesini ve sorumluluğun belirlenmesini sağlar."
+      },
+      {
+        "instruction": "ML modellerinde etik yönergeler nasıl oluşturulur?",
+        "input": "ML projelerinde etik ilkeleri belirlemek ve uygulamak için hangi adımlar izlenmelidir?",
+        "output": "ML modellerinde etik yönergeler oluşturmak için paydaşların katılımı, risk değerlendirmesi, şeffaflık, adalet, hesap verebilirlik ve insan odaklılık gibi ilkeler benimsenmelidir. Etik yönergeler, modelin tasarımından dağıtımına kadar tüm yaşam döngüsünü kapsamalıdır."
+      },
+      {
+        "instruction": "ML modellerinde veri sahipliği ve rıza nasıl ele alınır?",
+        "input": "Kişisel verilerin kullanıldığı ML projelerinde veri sahiplerinin haklarını korumak ve rızalarını almak için hangi yöntemler kullanılır?",
+        "output": "ML modellerinde veri sahipliği ve rızayı ele almak için veri sahiplerine veri kullanımı hakkında şeffaf bilgi verilmesi, rıza mekanizmalarının oluşturulması, veri sahiplerinin verilerini kontrol etme ve silme haklarının tanınması gibi yöntemler kullanılır."
+      },
+      {
+        "instruction": "ML modellerinde otomatik karar verme sistemlerinin etkileri nelerdir?",
+        "input": "Otomatik karar verme sistemlerinin (örneğin, kredi puanlama, işe alım) bireyler ve toplum üzerindeki potansiyel etkileri nelerdir?",
+        "output": "Otomatik karar verme sistemleri, bireylerin fırsatlara erişimini etkileyebilir, ayrımcılığa yol açabilir ve sosyal eşitsizlikleri derinleştirebilir. Bu nedenle, bu sistemlerin etkileri dikkatlice değerlendirilmeli ve etik ilkelerle uyumlu hale getirilmelidir."
+      },
+      {
+        "instruction": "ML modellerinde etik denetim ve değerlendirme nasıl yapılır?",
+        "input": "ML modellerinin etik ilkelerle uyumlu olup olmadığını değerlendirmek ve denetlemek için hangi süreçler oluşturulabilir?",
+        "output": "ML modellerinde etik denetim ve değerlendirme için bağımsız denetim kurulları, etik etki değerlendirmeleri, paydaş geri bildirimleri ve sürekli izleme mekanizmaları oluşturulabilir. Bu süreçler, modelin etik risklerini belirlemeye ve azaltmaya yardımcı olur."
+      },
+        {
+        "instruction": "ML modellerinde çeşitliliğin önemi nedir?",
+        "input": "ML modellerinin geliştirme süreçlerinde farklı bakış açılarına ve deneyimlere sahip ekiplerin yer almasının faydaları nelerdir?",
+        "output": "ML modellerinde çeşitlilik, modelin önyargılarını azaltmaya, farklı kullanıcı gruplarının ihtiyaçlarını daha iyi anlamaya ve daha kapsayıcı çözümler geliştirmeye yardımcı olur. Çeşitli ekipler, modelin potansiyel etik risklerini daha iyi tespit edebilir ve ele alabilir."
+      },
+        {
+        "instruction": "ML modellerinde etik dışı kullanımın sonuçları nelerdir?",
+        "input": "ML modellerinin kötü niyetli veya etik dışı amaçlarla kullanılmasının bireyler, toplum ve teknoloji üzerindeki potansiyel etkileri nelerdir?",
+        "output": "ML modellerinin etik dışı kullanımı, bireylerin gizliliğinin ihlal edilmesine, ayrımcılığa, manipülasyona ve sosyal güvensizliğe yol açabilir. Bu nedenle, ML modellerinin etik kullanımını teşvik etmek ve kötüye kullanımını önlemek için yasal düzenlemeler ve etik yönergeler oluşturulmalıdır."
+      },
+      {
+        "instruction": "ML modellerine yönelik adversarial saldırılar nelerdir ve nasıl önlenir?",
+        "input": "ML modellerinin yanlış sınıflandırmalar yapmasına neden olan adversarial örnekler nasıl oluşturulur ve bu saldırılara karşı hangi savunma mekanizmaları kullanılabilir?",
+        "output": "Adversarial saldırılar, ML modellerini yanıltmak için tasarlanmış girdilerdir. Bu saldırılar, küçük ve fark edilmesi zor değişikliklerle bile modelin yanlış tahminler yapmasına neden olabilir. Savunma mekanizmaları arasında adversarial eğitim, girdi doğrulaması ve model sağlamlığı teknikleri bulunur."
+      },
+      {
+        "instruction": "Veri şifreleme ve anonimleştirme teknikleri ML projelerinde nasıl kullanılır?",
+        "input": "Hassas verilerin gizliliğini korumak ve yetkisiz erişimi önlemek için hangi şifreleme ve anonimleştirme yöntemleri uygulanabilir?",
+        "output": "Veri şifreleme, verileri okunamaz hale getirerek yetkisiz erişimi engeller. Anonimleştirme ise, kişisel bilgileri kaldırarak veya değiştirerek veri sahiplerinin kimliğini gizler. Bu teknikler, diferansiyel gizlilik, homomorfik şifreleme ve sentetik veri üretimi gibi yöntemlerle uygulanabilir."
+      },
+      {
+        "instruction": "ML modellerinin ve verilerinin güvenliğini sağlamak için hangi en iyi uygulamalar izlenmelidir?",
+        "input": "ML projelerinde güvenlik açıklarını azaltmak ve veri ihlallerini önlemek için hangi güvenlik önlemleri alınmalıdır?",
+        "output": "ML modellerinin ve verilerinin güvenliğini sağlamak için güvenli kodlama pratikleri, erişim kontrolü, güvenlik duvarları, izleme sistemleri ve düzenli güvenlik denetimleri uygulanmalıdır. Ayrıca, güvenlik bilincini artırmak için çalışanlara eğitim verilmelidir."
+      },
+      {
+        "instruction": "ML modellerinde model zehirleme (model poisoning) saldırıları nasıl gerçekleşir?",
+        "input": "Eğitim verilerine kötü niyetli veriler ekleyerek modelin performansını düşüren veya önyargılı hale getiren saldırılar nasıl yapılır?",
+        "output": "Model zehirleme saldırıları, eğitim verilerine kötü niyetli veriler ekleyerek modelin öğrenme sürecini manipüle eder. Bu saldırılar, modelin yanlış tahminler yapmasına veya belirli gruplara karşı önyargılı hale gelmesine neden olabilir. Savunma mekanizmaları arasında veri doğrulaması, anomali tespiti ve model sağlamlığı teknikleri bulunur."
+      },
+      {
+        "instruction": "ML modellerinde model çıkarımı (model extraction) saldırıları nasıl gerçekleşir?",
+        "input": "Bir ML modelinin mimarisini ve parametrelerini çalmak veya kopyalamak için hangi saldırı yöntemleri kullanılır?",
+        "output": "Model çıkarımı saldırıları, bir ML modeline yapılan sorgular aracılığıyla modelin mimarisini ve parametrelerini tahmin etmeye çalışır. Bu saldırılar, modelin kopyalanmasına veya çalınmasına neden olabilir. Savunma mekanizmaları arasında model karmaşıklığını artırma, girdi doğrulaması ve erişim kontrolü bulunur."
+      },
+      {
+        "instruction": "ML modellerinde tersine mühendislik (reverse engineering) saldırıları nasıl gerçekleşir?",
+        "input": "Bir ML modelinin eğitim verilerini veya öğrenme algoritmalarını tahmin etmek için hangi saldırı yöntemleri kullanılır?",
+        "output": "Tersine mühendislik saldırıları, bir ML modeline yapılan sorgular aracılığıyla modelin eğitim verilerini veya öğrenme algoritmalarını tahmin etmeye çalışır. Bu saldırılar, modelin hassas bilgileri ifşa etmesine veya kopyalanmasına neden olabilir. Savunma mekanizmaları arasında model karmaşıklığını artırma, girdi doğrulaması ve erişim kontrolü bulunur."
+      },
+      {
+        "instruction": "ML modellerinde veri sızıntısı (data leakage) nasıl önlenir?",
+        "input": "ML modellerinin eğitim veya test verilerinden hassas bilgileri ifşa etmesini önlemek için hangi yöntemler kullanılır?",
+        "output": "Veri sızıntısı, modelin eğitim veya test verilerinden hassas bilgileri öğrenmesi ve ifşa etmesidir. Bunu önlemek için veri ön işleme, özellik seçimi ve model değerlendirme süreçlerinde dikkatli olunmalıdır. Ayrıca, düzenli güvenlik denetimleri yapılmalıdır."
+      },
+      {
+        "instruction": "ML modellerinde güvenlik açıkları (vulnerabilities) nasıl tespit edilir?",
+        "input": "ML modellerinin potansiyel güvenlik açıklarını belirlemek ve düzeltmek için hangi yöntemler kullanılır?",
+        "output": "ML modellerinde güvenlik açıkları, statik analiz, dinamik analiz, fuzzing ve adversarial test gibi yöntemlerle tespit edilebilir. Bu yöntemler, modelin kodunu, girdilerini ve çıktılarını analiz ederek potansiyel zayıflıkları belirler."
+      },
+      {
+        "instruction": "ML modellerinde güvenlik güncellemeleri (security updates) nasıl yönetilir?",
+        "input": "ML modellerinin güvenlik açıklarını düzeltmek ve yeni tehditlere karşı korumak için hangi güncelleme stratejileri uygulanmalıdır?",
+        "output": "ML modellerinde güvenlik güncellemeleri, düzenli olarak yayınlanmalı ve otomatik olarak uygulanmalıdır. Güncellemeler, modelin güvenlik açıklarını düzeltmeli ve yeni tehditlere karşı koruma sağlamalıdır. Ayrıca, güncelleme süreçleri şeffaf ve izlenebilir olmalıdır."
+      },
+      {
+        "instruction": "ML modellerinde güvenlik denetimi (security audit) nasıl yapılır?",
+        "input": "ML modellerinin güvenlik politikalarına ve standartlarına uygunluğunu değerlendirmek için hangi denetim süreçleri oluşturulabilir?",
+        "output": "ML modellerinde güvenlik denetimi, bağımsız denetim kurulları, güvenlik uzmanları ve otomatik denetim araçları kullanılarak yapılabilir. Denetim süreçleri, modelin tasarımından dağıtımına kadar tüm yaşam döngüsünü kapsamalıdır."
+      },
+        {
+        "instruction": "ML modellerinde güvenlik olaylarına (security incidents) nasıl müdahale edilir?",
+        "input": "ML modellerinde güvenlik ihlali veya saldırı tespit edildiğinde hangi acil durum müdahale planları uygulanmalıdır?",
+        "output": "ML modellerinde güvenlik olaylarına müdahale, olay tespiti, olay analizi, olay engelleme, olay iyileştirme ve olay raporlama adımlarını içerir. Acil durum müdahale planları, olayların hızlı ve etkili bir şekilde çözülmesini sağlamalıdır."
+      },
+        {
+        "instruction": "ML modellerinde güvenlik farkındalığı (security awareness) nasıl artırılır?",
+        "input": "ML projelerinde çalışanların ve kullanıcıların güvenlik bilincini artırmak için hangi eğitim ve bilinçlendirme faaliyetleri yapılabilir?",
+        "output": "ML projelerinde güvenlik farkındalığı, düzenli eğitimler, güvenlik politikaları, güvenlik testleri ve güvenlik ipuçları gibi faaliyetlerle artırılabilir. Güvenlik bilinci, çalışanların ve kullanıcıların güvenlik tehditlerini tanımasına ve önlemesine yardımcı olur."
+      },
+      {
+        "instruction": "Bulut tabanlı ML platformları (AWS, Azure, GCP) nasıl kullanılır?",
+        "input": "AWS SageMaker, Azure Machine Learning veya Google Cloud AI Platform gibi bulut tabanlı ML platformlarını kullanarak ML modelleri nasıl eğitilir, dağıtılır ve yönetilir?",
+        "output": "Bulut tabanlı ML platformları, ML projeleri için ölçeklenebilir altyapı, veri depolama ve işlem gücü sağlar. Bu platformlar, önceden oluşturulmuş algoritmalar, otomatik ML araçları ve model dağıtım hizmetleri sunar. Kullanıcılar, web arayüzleri veya API'ler aracılığıyla platformlara erişebilir ve ML iş akışlarını yönetebilir."
+      },
+      {
+        "instruction": "Bulutta ML modellerini eğitmek, dağıtmak ve yönetmek için hangi araçlar kullanılır?",
+        "input": "Bulut platformlarında ML modellerini eğitmek, dağıtmak ve yönetmek için hangi araçlar ve hizmetler kullanılır?",
+        "output": "Bulut platformlarında ML modellerini eğitmek için sanal makineler, konteynerler (Docker, Kubernetes) ve yönetilen ML hizmetleri (SageMaker, Azure ML, Vertex AI) kullanılır. Model dağıtımı için sunucusuz fonksiyonlar (Lambda, Azure Functions, Cloud Functions) veya konteyner orkestrasyon araçları (Kubernetes) kullanılabilir. Model yönetimi için model versiyonlama, izleme ve dağıtım otomasyonu araçları kullanılır."
+      },
+      {
+        "instruction": "Sunucusuz (serverless) ML nedir ve hangi avantajları sunar?",
+        "input": "Sunucusuz ML'nin temel prensipleri nelerdir ve ML projelerine hangi faydaları sağlar?",
+        "output": "Sunucusuz ML, altyapı yönetimi olmadan ML modellerini çalıştırmayı sağlayan bir yaklaşımdır. Kullanıcılar, yalnızca modelin çalışma süresi için ödeme yapar ve altyapı ölçeklendirme gibi detaylarla uğraşmazlar. Bu, ML projelerinin maliyetini düşürür, geliştirme hızını artırır ve ölçeklenebilirlik sağlar."
+      },
+      {
+        "instruction": "Bulut tabanlı veri depolama hizmetleri ML projelerinde nasıl kullanılır?",
+        "input": "AWS S3, Azure Blob Storage veya Google Cloud Storage gibi bulut tabanlı veri depolama hizmetlerini kullanarak büyük veri kümeleri nasıl depolanır ve yönetilir?",
+        "output": "Bulut tabanlı veri depolama hizmetleri, ML projeleri için ölçeklenebilir ve güvenli veri depolama imkanı sunar. Bu hizmetler, farklı veri tiplerini (yapılandırılmış, yapılandırılmamış) depolayabilir ve veri erişimini yönetebilir. Kullanıcılar, API'ler veya SDK'lar aracılığıyla verilere erişebilir ve veri işleme iş akışlarını otomatikleştirebilir."
+      },
+      {
+        "instruction": "Bulut tabanlı veri işleme hizmetleri ML projelerinde nasıl kullanılır?",
+        "input": "AWS Glue, Azure Data Factory veya Google Cloud Dataflow gibi bulut tabanlı veri işleme hizmetlerini kullanarak veri ön işleme ve dönüştürme işlemleri nasıl yapılır?",
+        "output": "Bulut tabanlı veri işleme hizmetleri, büyük veri kümelerini ölçeklenebilir bir şekilde işlemek ve dönüştürmek için kullanılır. Bu hizmetler, veri temizleme, dönüştürme, birleştirme ve zenginleştirme gibi işlemleri otomatikleştirebilir. Kullanıcılar, görsel arayüzler veya kod tabanlı araçlar aracılığıyla veri işleme iş akışlarını oluşturabilir."
+      },
+      {
+        "instruction": "Bulut tabanlı ML modellerini izleme ve yönetme nasıl yapılır?",
+        "input": "Bulutta dağıtılan ML modellerinin performansını izlemek, hataları tespit etmek ve model versiyonlarını yönetmek için hangi yöntemler ve araçlar kullanılır?",
+        "output": "Bulut tabanlı ML modellerini izlemek için metrik izleme, log analizi ve uyarı sistemleri kullanılır. Model yönetimi için model versiyonlama, model dağıtım otomasyonu ve model geri alma mekanizmaları kullanılır. Bu araçlar, modelin performansını sürekli olarak izlemeyi ve gerektiğinde müdahale etmeyi sağlar."
+      },
+      {
+        "instruction": "Bulut tabanlı ML projelerinde maliyet optimizasyonu nasıl yapılır?",
+        "input": "Bulut tabanlı ML projelerinin maliyetini düşürmek için hangi stratejiler ve teknikler uygulanabilir?",
+        "output": "Bulut tabanlı ML projelerinde maliyet optimizasyonu için kaynak kullanımını izlemek, gereksiz kaynakları kapatmak, spot örnekleri kullanmak, sunucusuz mimarileri tercih etmek ve otomatik ölçeklendirme kullanmak gibi stratejiler uygulanabilir. Ayrıca, veri depolama ve transfer maliyetlerini optimize etmek için veri sıkıştırma ve önbellekleme teknikleri kullanılabilir."
+      },
+      {
+        "instruction": "Bulut tabanlı ML projelerinde güvenlik nasıl sağlanır?",
+        "input": "Bulut platformlarında ML modellerini ve verilerini siber saldırılardan korumak için hangi güvenlik önlemleri alınmalıdır?",
+        "output": "Bulut tabanlı ML projelerinde güvenlik için erişim kontrolü, veri şifreleme, güvenlik duvarları, izleme sistemleri ve düzenli güvenlik denetimleri uygulanmalıdır. Ayrıca, güvenlik bilincini artırmak için çalışanlara eğitim verilmelidir. Bulut platformlarının güvenlik hizmetleri (IAM, KMS, Security Hub) kullanılmalıdır."
+      },
+      {
+        "instruction": "Bulut tabanlı ML projelerinde işbirliği nasıl yapılır?",
+        "input": "Bulut platformlarında ML projelerinde farklı ekiplerin ve paydaşların işbirliği yapmasını kolaylaştırmak için hangi araçlar ve yöntemler kullanılır?",
+        "output": "Bulut tabanlı ML projelerinde işbirliği için versiyon kontrol sistemleri (Git), proje yönetim araçları (Jira, Trello), iletişim araçları (Slack, Teams) ve ortak çalışma alanları (Google Docs, Office 365) kullanılır. Bu araçlar, kod paylaşımı, görev takibi, iletişim ve dokümantasyon gibi işbirliği süreçlerini destekler."
+      },
+      {
+        "instruction": "Bulut tabanlı ML projelerinde hibrit ve çoklu bulut stratejileri nasıl uygulanır?",
+        "input": "Farklı bulut platformlarını veya şirket içi altyapıyı birleştirerek ML projeleri için hibrit veya çoklu bulut mimarileri nasıl oluşturulur?",
+        "output": "Hibrit ve çoklu bulut stratejileri, ML projelerine esneklik, yedeklilik ve maliyet optimizasyonu sağlar. Bu stratejiler, veri ve modelleri farklı ortamlarda çalıştırmayı ve geçiş yapmayı kolaylaştırır. Konteyner orkestrasyon araçları (Kubernetes) ve bulutlar arası veri transfer hizmetleri bu stratejileri destekler."
+      },
+        {
+        "instruction": "Bulut tabanlı ML projelerinde yapay zeka hizmetleri (AI Services) nasıl kullanılır?",
+        "input": "AWS Rekognition, Azure Cognitive Services veya Google Cloud Vision API gibi yapay zeka hizmetlerini kullanarak görüntü tanıma, doğal dil işleme veya ses tanıma gibi görevler nasıl gerçekleştirilir?",
+        "output": "Bulut tabanlı yapay zeka hizmetleri, önceden eğitilmiş modeller ve API'ler aracılığıyla görüntü tanıma, doğal dil işleme veya ses tanıma gibi görevleri kolaylaştırır. Bu hizmetler, ML uzmanlığı gerektirmeyen kullanıcılar için bile hızlı ve etkili çözümler sunar. API'ler aracılığıyla verilere erişilebilir ve sonuçlar entegre edilebilir."
+      },
+        {
+        "instruction": "Bulut tabanlı ML projelerinde veri mühendisliği (data engineering) nasıl yapılır?",
+        "input": "Bulut platformlarında büyük veri kümelerini işlemek, dönüştürmek ve analiz etmek için hangi veri mühendisliği araçları ve teknikleri kullanılır?",
+        "output": "Bulut tabanlı ML projelerinde veri mühendisliği, veri toplama, veri depolama, veri işleme ve veri analizi adımlarını içerir. Bu adımlar için veri ambarları (Redshift, BigQuery, Snowflake), veri gölleri (S3, ADLS, GCS), veri işleme araçları (Spark, Databricks) ve veri görselleştirme araçları (Tableau, Looker) kullanılır. Veri mühendisleri, veri işleme iş akışlarını otomatikleştirmek için ETL/ELT araçlarını kullanır."
+      },
+      {
+        "instruction": "Kripto para piyasasının küresel düzenlemeleri nelerdir?",
+        "input": "Farklı ülkelerdeki kripto para düzenlemeleri nasıl farklılık gösterir ve bu düzenlemelerin piyasa üzerindeki etkileri nelerdir?",
+        "output": "Kripto para düzenlemeleri, ülkeden ülkeye büyük farklılıklar gösterir. Bazı ülkeler kripto paraları yasal ödeme aracı olarak tanırken, bazıları tamamen yasaklar. Bazı ülkeler ise kripto para borsalarını ve ICO'ları (İlk Coin Arzları) düzenler. Bu düzenlemeler, piyasanın büyümesini, yatırımcı güvenini ve teknolojik yenilikleri etkiler."
+      },
+      {
+        "instruction": "Merkez bankası dijital para birimleri (CBDC'ler) kripto para piyasasını nasıl etkiler?",
+        "input": "CBDC'lerin piyasaya sürülmesi, mevcut kripto para birimlerinin değerini ve kullanımını nasıl etkiler?",
+        "output": "CBDC'ler, merkez bankaları tarafından çıkarılan dijital para birimleridir. CBDC'lerin yaygınlaşması, kripto para piyasasında rekabeti artırabilir ve bazı kripto para birimlerinin değerini düşürebilir. Ancak, CBDC'ler aynı zamanda blok zinciri teknolojisinin ve dijital para birimlerinin benimsenmesini hızlandırabilir."
+      },
+      {
+        "instruction": "Kripto para piyasasının geleceği hakkında öngörüler nelerdir?",
+        "input": "Kripto para piyasasının uzun vadeli geleceği hakkında uzmanların görüşleri nelerdir ve hangi faktörler piyasanın gelişimini etkileyecektir?",
+        "output": "Kripto para piyasasının geleceği hakkında farklı görüşler bulunmaktadır. Bazı uzmanlar, kripto paraların geleneksel finans sistemini dönüştüreceğini ve yaygın olarak benimseneceğini öngörürken, bazıları ise piyasanın volatil olduğunu ve riskli olduğunu düşünmektedir. Piyasanın gelişimini etkileyecek faktörler arasında düzenlemeler, teknolojik gelişmeler, kurumsal yatırımcıların ilgisi ve küresel ekonomik koşullar bulunmaktadır."
+      },
+      {
+        "instruction": "Kripto para borsalarının düzenlenmesi neden önemlidir?",
+        "input": "Kripto para borsalarının düzenlenmesi, yatırımcıları korumak ve piyasa bütünlüğünü sağlamak için neden gereklidir?",
+        "output": "Kripto para borsalarının düzenlenmesi, yatırımcıları dolandırıcılıktan, piyasa manipülasyonundan ve kara para aklamadan korumak için önemlidir. Düzenlemeler, borsaların şeffaflığını, güvenliğini ve finansal istikrarını artırır."
+      },
+      {
+        "instruction": "Kripto para vergilendirmesi nasıl yapılır?",
+        "input": "Farklı ülkelerde kripto para kazançları nasıl vergilendirilir ve vergi yükümlülükleri nelerdir?",
+        "output": "Kripto para vergilendirmesi, ülkeden ülkeye farklılık gösterir. Bazı ülkeler kripto para kazançlarını sermaye kazancı olarak vergilendirirken, bazıları ise gelir vergisi olarak vergilendirir. Vergi yükümlülükleri, işlem türüne, kazanç miktarına ve vergi mükellefinin durumuna göre değişir."
+      },
+      {
+        "instruction": "Kripto para piyasasında kara para aklama (AML) ve terör finansmanı (CFT) ile mücadele nasıl yapılır?",
+        "input": "Kripto para borsaları ve diğer hizmet sağlayıcılar, AML ve CFT ile mücadele etmek için hangi önlemleri almalıdır?",
+        "output": "Kripto para borsaları ve diğer hizmet sağlayıcılar, AML ve CFT ile mücadele etmek için müşteri kimlik doğrulama (KYC), işlem izleme, şüpheli işlem raporlama ve yaptırım listeleri taraması gibi önlemler almalıdır. Bu önlemler, yasa dışı faaliyetlerin tespit edilmesine ve önlenmesine yardımcı olur."
+      },
+      {
+        "instruction": "Kripto para piyasasında merkeziyetsiz finans (DeFi) düzenlemeleri nasıl olmalıdır?",
+        "input": "DeFi platformlarının düzenlenmesi, yenilikçiliği teşvik etmek ve riskleri azaltmak için nasıl dengelenmelidir?",
+        "output": "DeFi platformlarının düzenlenmesi, yenilikçiliği teşvik etmek ve riskleri azaltmak için dikkatli bir şekilde yapılmalıdır. Düzenlemeler, platformların şeffaflığını, güvenliğini ve kullanıcı korumasını artırmalıdır. Ancak, aşırı düzenleme yenilikçiliği engelleyebilir ve piyasanın gelişimini yavaşlatabilir."
+      },
+      {
+        "instruction": "Kripto para piyasasında stablecoin'lerin rolü nedir ve nasıl düzenlenmelidir?",
+        "input": "Stablecoin'lerin piyasa istikrarına ve finansal sisteme etkileri nelerdir ve nasıl düzenlenmelidirler?",
+        "output": "Stablecoin'ler, fiyat istikrarı sağlamak için tasarlanmış kripto para birimleridir. Stablecoin'ler, ödeme sistemlerinde, ticarette ve DeFi uygulamalarında yaygın olarak kullanılır. Stablecoin'lerin düzenlenmesi, rezervlerin şeffaflığını, ihraççıların güvenilirliğini ve piyasa istikrarını sağlamayı amaçlamalıdır."
+      },
+      {
+        "instruction": "Kripto para piyasasında güvenlik token'larının (security tokens) düzenlenmesi nasıl olmalıdır?",
+        "input": "Güvenlik token'larının düzenlenmesi, yatırımcıları korumak ve sermaye piyasalarına erişimi kolaylaştırmak için nasıl yapılmalıdır?",
+        "output": "Güvenlik token'ları, geleneksel menkul kıymetlere benzer şekilde düzenlenmelidir. Düzenlemeler, ihraççıların şeffaflığını, yatırımcıların korunmasını ve piyasa bütünlüğünü sağlamalıdır. Ancak, güvenlik token'larının düzenlenmesi, sermaye piyasalarına erişimi kolaylaştırmalı ve yenilikçiliği teşvik etmelidir."
+      },
+      {
+        "instruction": "Kripto para piyasasında çevre dostu (green) kripto para birimleri ve teknolojileri nasıl teşvik edilebilir?",
+        "input": "Kripto para madenciliği ve diğer faaliyetlerinin çevresel etkilerini azaltmak için hangi teşvikler ve düzenlemeler uygulanabilir?",
+        "output": "Kripto para piyasasında çevre dostu kripto para birimleri ve teknolojileri, yenilenebilir enerji kaynaklarının kullanımı, enerji verimli madencilik ekipmanları ve karbon dengeleme projeleri gibi teşviklerle desteklenebilir. Ayrıca, çevresel etkileri azaltmak için düzenlemeler ve standartlar oluşturulabilir."
+      },
+        {
+        "instruction": "Kripto para piyasasında tüketici koruması nasıl sağlanır?",
+        "input": "Kripto para yatırımcılarını dolandırıcılıktan, piyasa manipülasyonundan ve diğer risklerden korumak için hangi önlemler alınmalıdır?",
+        "output": "Kripto para piyasasında tüketici koruması, yatırımcı eğitimleri, risk uyarıları, şikayet mekanizmaları ve sigorta fonları gibi önlemlerle sağlanabilir. Ayrıca, kripto para borsaları ve diğer hizmet sağlayıcılar, tüketici koruma yasalarına uymalıdır."
+      },
+        {
+        "instruction": "Kripto para piyasasında uluslararası işbirliği nasıl geliştirilebilir?",
+        "input": "Kripto para düzenlemeleri ve denetimi konusunda ülkeler arasında işbirliğini artırmak için hangi mekanizmalar oluşturulabilir?",
+        "output": "Kripto para piyasasında uluslararası işbirliği, bilgi paylaşımı, standartlar oluşturma, ortak denetimler ve yaptırımlar gibi mekanizmalarla geliştirilebilir. Uluslararası kuruluşlar (FATF, IOSCO) ve bölgesel işbirliği platformları (AB, ASEAN) bu konuda önemli rol oynayabilir."
+      },
+      {
+        "instruction": "Finansal okuryazarlık nasıl geliştirilir?",
+        "input": "Finansal okuryazarlık düzeyini artırmak için hangi kaynaklardan ve yöntemlerden yararlanılabilir?",
+        "output": "Finansal okuryazarlık, kitaplar, makaleler, çevrimiçi kurslar, seminerler ve finansal danışmanlar gibi çeşitli kaynaklardan öğrenilebilir. Bütçe oluşturma, yatırım yapma, borç yönetimi ve risk değerlendirmesi gibi temel finansal kavramları öğrenmek önemlidir."
+      },
+      {
+        "instruction": "Yatırımcıların duygusal önyargıları nelerdir ve nasıl aşılır?",
+        "input": "Yatırım kararlarını olumsuz etkileyen duygusal önyargılar nelerdir ve bu önyargıların üstesinden gelmek için hangi stratejiler kullanılabilir?",
+        "output": "Yatırımcıların duygusal önyargıları arasında aşırı güven, kayıptan kaçınma, sürü psikolojisi ve demirleme sayılabilir. Bu önyargıların üstesinden gelmek için yatırımcılar, yatırım planı oluşturmalı, duygusal kararlardan kaçınmalı, çeşitlendirme yapmalı ve uzun vadeli düşünmelidir."
+      },
+      {
+        "instruction": "Uzun vadeli yatırım yapmanın önemi nedir?",
+        "input": "Uzun vadeli yatırım yapmanın kısa vadeli yatırım yapmaya göre avantajları nelerdir ve uzun vadeli yatırım stratejisi nasıl oluşturulur?",
+        "output": "Uzun vadeli yatırım, bileşik getiri etkisi sayesinde daha yüksek getiri potansiyeli sunar ve piyasa dalgalanmalarının etkisini azaltır. Uzun vadeli yatırım stratejisi oluşturmak için yatırımcılar, risk toleranslarını belirlemeli, yatırım hedeflerini tanımlamalı, portföylerini çeşitlendirmeli ve düzenli olarak yatırım yapmalıdır."
+      },
+      {
+        "instruction": "Bütçe oluşturma ve harcama takibi nasıl yapılır?",
+        "input": "Gelir ve giderleri takip etmek, tasarruf etmek ve finansal hedeflere ulaşmak için etkili bir bütçe nasıl oluşturulur?",
+        "output": "Bütçe oluşturmak için gelir ve giderleri listelemek, harcamaları kategorilere ayırmak, tasarruf hedefleri belirlemek ve bütçeyi düzenli olarak gözden geçirmek gerekir. Harcama takibi için bütçe uygulamaları, elektronik tablolar veya not defterleri kullanılabilir."
+      },
+      {
+        "instruction": "Borç yönetimi nasıl yapılır?",
+        "input": "Borçları azaltmak, ödemeleri düzenlemek ve borç tuzağına düşmekten kaçınmak için hangi stratejiler uygulanabilir?",
+        "output": "Borç yönetimi için borçları listelemek, faiz oranlarını karşılaştırmak, ödeme planı oluşturmak, ek gelir kaynakları araştırmak ve borç danışmanlığı almak gibi stratejiler uygulanabilir."
+      },
+      {
+        "instruction": "Risk yönetimi ve portföy çeşitlendirmesi nasıl yapılır?",
+        "input": "Yatırım risklerini azaltmak ve portföy getirisini optimize etmek için hangi risk yönetimi ve portföy çeşitlendirme teknikleri kullanılır?",
+        "output": "Risk yönetimi için yatırımcılar, risk toleranslarını belirlemeli, yatırım hedeflerine uygun risk seviyesi seçmeli ve portföylerini farklı varlık sınıflarına (hisse senetleri, tahviller, emtialar) dağıtmalıdır. Portföy çeşitlendirmesi, riskleri azaltır ve getiri potansiyelini artırır."
+      },
+      {
+        "instruction": "Finansal hedefler nasıl belirlenir ve takip edilir?",
+        "input": "Kısa, orta ve uzun vadeli finansal hedefler belirlemek ve bu hedeflere ulaşmak için hangi adımlar izlenmelidir?",
+        "output": "Finansal hedefler, SMART (Spesifik, Ölçülebilir, Ulaşılabilir, İlgili, Zamana Bağlı) kriterlerine göre belirlenmelidir. Hedeflere ulaşmak için bütçe oluşturmak, tasarruf etmek, yatırım yapmak ve düzenli olarak ilerlemeyi takip etmek gerekir."
+      },
+      {
+        "instruction": "Emeklilik planlaması nasıl yapılır?",
+        "input": "Emeklilik için yeterli birikim oluşturmak ve emeklilik gelirini güvence altına almak için hangi yatırım araçları ve stratejiler kullanılabilir?",
+        "output": "Emeklilik planlaması için bireysel emeklilik planları, devlet destekli emeklilik sistemleri, hisse senetleri, tahviller ve gayrimenkul gibi yatırım araçları kullanılabilir. Emeklilik gelirini güvence altına almak için düzenli tasarruf etmek, erken yaşta başlamak ve uzun vadeli düşünmek önemlidir."
+      },
+      {
+        "instruction": "Finansal piyasalar ve yatırım araçları hakkında bilgi nasıl edinilir?",
+        "input": "Hisse senetleri, tahviller, yatırım fonları, emtialar ve kripto paralar gibi farklı yatırım araçları hakkında bilgi edinmek için hangi kaynaklardan yararlanılabilir?",
+        "output": "Finansal piyasalar ve yatırım araçları hakkında bilgi edinmek için finansal haber siteleri, yatırım şirketlerinin web siteleri, kitaplar, makaleler, çevrimiçi kurslar ve finansal danışmanlar gibi kaynaklardan yararlanılabilir."
+      },
+      {
+        "instruction": "Finansal dolandırıcılık ve sahtekarlıklardan nasıl korunulur?",
+        "input": "Yatırım dolandırıcılığı, kimlik avı ve diğer finansal sahtekarlıklardan korunmak için hangi önlemler alınmalıdır?",
+        "output": "Finansal dolandırıcılık ve sahtekarlıklardan korunmak için yatırımcılar, şüpheli tekliflere karşı dikkatli olmalı, yatırım yapmadan önce araştırma yapmalı, lisanslı finansal danışmanlardan destek almalı ve kişisel bilgilerini korumalıdır."
+      },
+        {
+        "instruction": "Finansal danışmanlık hizmetleri nasıl değerlendirilir?",
+        "input": "Finansal danışman seçerken nelere dikkat edilmelidir ve finansal danışmanlık hizmetlerinden en iyi şekilde nasıl yararlanılır?",
+        "output": "Finansal danışman seçerken danışmanın lisansı, deneyimi, uzmanlık alanı, ücretleri ve referansları değerlendirilmelidir. Finansal danışmanlık hizmetlerinden en iyi şekilde yararlanmak için yatırım hedefleri, risk toleransı ve finansal durumu hakkında açık ve dürüst bilgi verilmelidir."
+      },
+        {
+        "instruction": "Finansal piyasalardaki haberler ve analizler nasıl yorumlanır?",
+        "input": "Finansal haberleri ve analizleri doğru bir şekilde yorumlamak ve yatırım kararları vermek için hangi becerilere sahip olmak gerekir?",
+        "output": "Finansal haberleri ve analizleri yorumlamak için temel finansal kavramları bilmek, piyasa trendlerini takip etmek, şirketlerin finansal tablolarını analiz etmek ve haberlerin kaynağını ve tarafsızlığını değerlendirmek gerekir."
+      }
+]
